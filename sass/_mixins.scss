@@ -1,0 +1,35 @@
+/*
+$breakpoint arguments:
+- phone
+- tablet
+- desktop
+- medium-desktop
+- large-desktop
+*/
+@mixin responsive($breakpoint) {
+    /* Mobile Styles */
+    @if $breakpoint == mobile {
+        @media (max-width: 400px) {
+            @content;
+        }
+    }
+
+    /* Tablet Styles */
+    @if $breakpoint == tablet {
+        @media (min-width: 401px) and (max-width: 960px) {
+            @content;
+        }
+    }
+
+    /* Desktop Styles */
+    @if $breakpoint == desktop {
+        @media (min-width: 961px) {
+            @content;
+        }
+    }
+}
+
+@mixin responsive-image {
+    width: 100%;
+    height: auto;
+}

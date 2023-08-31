@@ -1,0 +1,65 @@
+:root {
+    // Neutral
+    --color-black: #000000;
+    --color-gray-dark: #222222;
+    --color-gray: #9a9a9a;
+    --color--gray-2: #c7c7c7;
+    --color-gray-1: #636363;
+    --color-gray-light: #e2e2e2;
+    --color-gray-light-2: #eeeeee;
+    --color-white: #ffffff;
+
+    // Primary
+    --color-primary-dark: #3c5e06;
+    --color-primary-1: #7baa2f;
+    --color-primary: #9fd24c;
+    --color-primary-light: #9fd24c;
+
+    // Secondary
+    --color-secondary-dark: #7e3219;
+    --color-secondary-1: #c13e13;
+    --color-secondary: #ff4f15;
+    --color-secondary-light: #ff4f15;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 50%;
+    box-sizing: border-box;
+
+    @include responsive(tablet) {
+        font-size: 62.5%; //comment out to use default 16px
+    }
+    @include responsive(desktop) {
+        font-size: 62.5%; //comment out to use default 16px
+    }
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: var(--color-gray-light);
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: var(--color-gray-light);
+    min-height: 100vh;
+
+    @include responsive(tablet) {
+        padding: 3.75rem;
+    }
+    @include responsive(desktop) {
+        padding: 3.75rem;
+    }
+}
