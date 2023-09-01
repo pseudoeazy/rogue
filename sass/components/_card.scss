@@ -2,7 +2,7 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 45rem;
+    height: 44rem;
     flex: 1;
     &:not(:last-child) {
         margin-right: 1.5rem;
@@ -10,7 +10,7 @@
 
     &__side {
         font-size: 4rem;
-        height: 45rem;
+        height: 44rem;
         width: 100%;
         transition: all 0.8s ease;
         position: absolute;
