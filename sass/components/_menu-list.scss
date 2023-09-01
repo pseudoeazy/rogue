@@ -9,6 +9,9 @@
         &:not(:last-child) {
             margin-right: 3.2rem;
         }
+        @include responsive(mobile) {
+            margin-top: 1.5rem;
+        }
     }
 
     &__link {
@@ -24,6 +27,9 @@
             color: var(--color-black);
             text-transform: capitalize;
             transition: all 0.4s;
+            @include responsive(mobile) {
+                font-size: 1.8rem;
+            }
         }
         &:active,
         &:hover {
