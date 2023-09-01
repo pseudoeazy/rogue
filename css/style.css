@@ -43,7 +43,7 @@ html {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (min-width: 401px) and (max-width: 960px) {
+@media (min-width: 721px) and (max-width: 960px) {
   html {
     font-size: 62.5%;
   }
@@ -74,7 +74,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (min-width: 401px) and (max-width: 960px) {
+@media (min-width: 721px) and (max-width: 960px) {
   .container {
     padding: 3.75rem;
   }
@@ -96,7 +96,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .header {
     background-color: var(--color--gray-2);
     padding: 1rem;
@@ -110,7 +110,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .header__right {
     width: 0;
     opacity: 0;
@@ -140,12 +140,12 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .header__logo {
     width: 14rem;
   }
 }
-@media (min-width: 401px) and (max-width: 960px) {
+@media (min-width: 721px) and (max-width: 960px) {
   .header__logo {
     width: 17rem;
   }
@@ -179,7 +179,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .header__navigation {
     display: inline-block;
   }
@@ -234,7 +234,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .projects {
     padding: 1rem;
   }
@@ -260,7 +260,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .projects__image {
     flex-shrink: 1;
     max-width: 100%;
@@ -290,7 +290,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .experience {
     padding: 1rem;
     flex-direction: column;
@@ -308,7 +308,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .experience__image {
     order: 2;
     margin-top: 3.4rem;
@@ -326,7 +326,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .experience__content {
     order: 1;
   }
@@ -347,7 +347,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .experience__title {
     margin-bottom: 1.5rem;
   }
@@ -365,7 +365,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .services {
     padding: 1rem;
   }
@@ -390,7 +390,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .services__details {
     flex-direction: column;
   }
@@ -402,7 +402,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .services__details-heading {
     margin-right: 0;
   }
@@ -418,7 +418,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .services__details-title {
     margin-bottom: 1.5rem;
   }
@@ -437,7 +437,7 @@ body {
   background: var(--color-gray-light-2);
   margin-right: -3.75rem;
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .services__details-box {
     width: 100%;
   }
@@ -464,7 +464,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .packages__cards {
     margin-left: auto;
     margin-right: auto;
@@ -496,7 +496,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .clients__heading-title {
     padding-left: 6%;
   }
@@ -509,7 +509,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .clients__details {
     width: 90%;
     margin: 0 auto;
@@ -579,7 +579,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .footer__details {
     align-items: center;
     justify-content: start;
@@ -619,7 +619,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .footer__nav {
     display: flex;
     list-style: none;
@@ -646,12 +646,12 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .footer__nav-item:not(:last-child) {
     margin-bottom: 0.6rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .footer__nav-item {
     margin-left: 0.6rem;
   }
@@ -674,7 +674,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .footer__socials {
     flex-direction: column;
     align-items: center;
@@ -728,7 +728,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .u-title {
     margin-bottom: 1.5rem;
   }
@@ -938,7 +938,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .menu-list {
     flex-direction: column;
   }
@@ -994,7 +994,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .features {
     padding: 1rem;
   }
@@ -1025,7 +1025,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .features__images {
     flex-direction: column;
     align-content: center;
@@ -1046,7 +1046,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .features__image--1 {
     width: 100%;
     height: auto;
@@ -1064,7 +1064,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .about-us {
     flex-direction: column;
     padding: 1rem;
@@ -1080,7 +1080,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .about-us__heading {
     margin-bottom: 2.5rem;
     flex: 0;
@@ -1110,7 +1110,7 @@ body {
   /* Tablet Styles */
   /* Desktop Styles */
 }
-@media (max-width: 400px) {
+@media (max-width: 720px) {
   .contact-form {
     flex-direction: column;
     padding-bottom: 5rem;

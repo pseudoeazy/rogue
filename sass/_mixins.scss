@@ -9,14 +9,14 @@ $breakpoint arguments:
 @mixin responsive($breakpoint) {
     /* Mobile Styles */
     @if $breakpoint == mobile {
-        @media (max-width: 400px) {
+        @media (max-width: 720px) {
             @content;
         }
     }
 
     /* Tablet Styles */
     @if $breakpoint == tablet {
-        @media (min-width: 401px) and (max-width: 960px) {
+        @media (min-width: 721px) and (max-width: 960px) {
             @content;
         }
     }
