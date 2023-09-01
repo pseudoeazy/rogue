@@ -456,6 +456,7 @@ body {
   margin-bottom: 12.5rem;
   clear: both;
   position: relative;
+  border: 1px solid red;
 }
 .packages__cards {
   display: flex;
@@ -466,15 +467,12 @@ body {
 }
 @media (max-width: 400px) {
   .packages__cards {
-    margin-left: auto;
-    margin-right: auto;
     padding: 1rem;
     flex-direction: column;
-    max-width: 76%;
+    max-width: 30rem;
+    border: 1px solid blue;
     clear: both;
     position: relative;
-    min-height: 130rem;
-    gap: 2rem;
   }
 }
 
@@ -764,32 +762,47 @@ body {
   display: inline-block;
 }
 
-.faq {
-  margin: 2rem 0;
+.feature-box {
+  border: 1px solid black;
+  background-color: rgba(var(--color-white), 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(var(--color-black), 0.5);
+  transition: transform 0.3s;
+  /* Mobile Styles */
+  /* Tablet Styles */
+  /* Desktop Styles */
 }
-.faq__details {
-  border-radius: 4px;
-  padding: 1rem 1rem 0;
-  cursor: pointer;
+.feature-box:not(:last-child) {
+  margin-right: 1.5rem;
 }
-.faq__summary {
-  font-weight: bold;
-  margin: -1rem -1rem 0;
+@media (max-width: 400px) {
+  .feature-box {
+    margin-right: 0;
+  }
+}
+.feature-box__icon {
+  font-size: 6rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.feature-box__text {
   padding: 1rem;
-  transition: all 0.4s ease;
-}
-.faq__details[open] {
-  padding: 1rem;
-}
-.faq__details[open] .faq__summary {
-  margin-bottom: 1rem;
 }
 
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 45rem;
+  height: 42rem;
   flex: 1;
 }
 .card:not(:last-child) {
@@ -797,7 +810,7 @@ body {
 }
 .card__side {
   font-size: 4rem;
-  height: 45rem;
+  height: 42rem;
   width: 100%;
   transition: all 0.8s ease;
   position: absolute;
@@ -1242,6 +1255,4 @@ body {
 .popup__checkbox:checked + .popup__button .popup__icon::after {
   top: 0;
   transform: rotate(-135deg);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

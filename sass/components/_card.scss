@@ -1,0 +1,158 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 45rem;
+    flex: 1;
+    &:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+
+    &__side {
+        font-size: 4rem;
+        height: 45rem;
+        width: 100%;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+        overflow: hidden;
+
+        &--front {
+            background-color: $color-white;
+        }
+        &--back {
+            transform: rotateY(-180deg);
+            &-1 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    var(--color-secondary-light),
+                    var(--color-secondary-dark)
+                );
+            }
+            &-2 {
+                background-image: linear-gradient(
+                    to right bottom,
+                    var(--color-primary-light),
+                    var(--color-primary-dark)
+                );
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tetiary-light, $color-tetiary-dark);
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom,
+                var(--color-secondary-light),
+                var(--color-secondary-dark)
+            );
+        }
+        &--2 {
+            background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tetiary-light, $color-tetiary-dark);
+        }
+    }
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(var(--color-secondary-light), 0.85),
+                rgba(var(--color-secondary-dark), 0.85)
+            );
+        }
+
+        &--2 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba(var(--color-primary-light), 0.85),
+                rgba(var(--color-primary-dark), 0.85)
+            );
+        }
+        &--3 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-tetiary-light, 0.85),
+                rgba($color-tetiary-dark, 0.85)
+            );
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-gray-light-2;
+                }
+            }
+        }
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        margin: bottom 8px;
+        color: $color-white;
+    }
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+}

@@ -3,7 +3,46 @@
     width: 100%;
     opacity: 1;
 }
+.u-title {
+    font-family: Manrope;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5rem; /* 111.111% */
+    letter-spacing: -0.135rem;
+    @include responsive(mobile) {
+        margin-bottom: 1.5rem;
+    }
+}
 
-.hide {
-    display: none;
+.loader {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 5px solid #fff;
+    border-bottom-color: var(--color-secondary-dark);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.response {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+
+    & > span {
+        display: inline-block;
+    }
 }

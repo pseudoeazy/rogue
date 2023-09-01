@@ -303,6 +303,30 @@
         }
     }
 }
+.details-points--item {
+    text-transform: capitalize;
+}
+.packages {
+    margin-bottom: 12.5rem;
+    clear: both;
+    position: relative;
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        @include responsive(mobile) {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1rem;
+            flex-direction: column;
+            max-width: 76%;
+            clear: both;
+            position: relative;
+            min-height: 130rem;
+            gap: 2rem;
+        }
+    }
+}
 
 .clients {
     margin-bottom: 12.8rem;
@@ -502,6 +526,11 @@
             background-color: var(--color--gray-2);
             width: 2rem;
             height: 2rem;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: var(--color-primary);
+            }
         }
     }
 }
