@@ -91,29 +91,6 @@
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-
-        &--1 {
-            background-image: linear-gradient(
-                to right bottom,
-                rgba(var(--color-secondary-light), 0.85),
-                rgba(var(--color-secondary-dark), 0.85)
-            );
-        }
-
-        &--2 {
-            background-image: linear-gradient(
-                to right bottom,
-                rgba(var(--color-primary-light), 0.85),
-                rgba(var(--color-primary-dark), 0.85)
-            );
-        }
-        &--3 {
-            background-image: linear-gradient(
-                to right bottom,
-                rgba($color-tetiary-light, 0.85),
-                rgba($color-tetiary-dark, 0.85)
-            );
-        }
     }
 
     &__details {
@@ -138,8 +115,9 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
+        width: 80%;
         text-align: center;
+        font-size: 1.2rem;
     }
 
     &__price-box {

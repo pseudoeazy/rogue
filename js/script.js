@@ -23,14 +23,16 @@ const view = {
       }, 3000);
     });
 
-    [...this.books].forEach((book) => {
-      book.addEventListener("click", () => {
-        view.popup.style.display = "block";
-      });
-    });
+    //disable popup
+
+    // [...this.books].forEach((book) => {
+    //   book.addEventListener("click", () => {
+    //     view.popup.style.display = "block";
+    //   });
+    // });
 
     this.popupClose.addEventListener("click", () => {
-      view.popup.style.display = "none";
+      // view.popup.style.display = "none";
     });
   },
 };
